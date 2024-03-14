@@ -76,11 +76,9 @@ S_green = (0xff & (mozdata[0] >> 8));
 S_blue = (0xff & mozdata[0]);
 for(l = 1; l < mozsize*mozsize ; l++)
 {
-//System.out.println("l="+ l);
 S_red += (0xff & (mozdata[l] >> 16));
 S_green += (0xff & (mozdata[l] >> 8));
 S_blue += (0xff & mozdata[l]);
-
 }
 average_red = S_red/(mozsize*mozsize);
 average_green = S_green/(mozsize*mozsize);
